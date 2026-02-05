@@ -1,6 +1,6 @@
 from manim import CairoRenderer
 
-from manim_skia.camera import SkiaCamera
+from manim_skia.camera.skia_camera import SkiaCamera
 
 class SkiaRenderer(CairoRenderer):
     def __init__(self, **kwargs):
