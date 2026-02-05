@@ -1,13 +1,14 @@
 [project]
 name = "manim-skia"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = [
     {name = "Miguel Ángel Rodríguez Vidal",email = "unmoldequimica@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<4.0.0"
 dependencies = [
+    "manim>=0.19"
 ]
 
 [tool.poetry]
@@ -16,3 +17,8 @@ packages = [{include = "manim_skia", from = "src"}]
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipdb (>=0.13.13,<0.14.0)"
+]
